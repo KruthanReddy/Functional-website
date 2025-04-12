@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+        header, footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: rgba(0, 0, 0, 0.6);
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #444;
+        }
+        .container {
+            padding: 20px;
+        }
+        section {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        input, button {
+            padding: 10px;
+            margin-top: 10px;
+        }
+        video {
+            max-width: 100%;
+            border: 3px solid white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Functional Website</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#video">Video</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="home">
+            <h2>Home</h2>
+            <p>This is the home section of our website, featuring a beautiful background image and user-friendly navigation.</p>
+            <button onclick="alert('Welcome to our website!')">Click Me!</button>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We provide high-quality content and engaging designs using modern web technologies like HTML, CSS, JavaScript, and PHP.</p>
+        </section>
+
+        <section id="video">
+            <h2>Watch Our Video</h2>
+            <video controls>
+                <source src="sample-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="submit.php" method="POST">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Functional Website. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Example JavaScript functionality
+        document.querySelector('form').addEventListener('submit', function(e) {
+            alert('Form submitted!');
+        });
+    </script>
+</body>
+</html>
